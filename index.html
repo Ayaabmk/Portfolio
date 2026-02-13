@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aya - Étudiante BTS CIEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Aya<span class="dot">.Tech</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+    </div>
+</nav>
+
+<header id="home">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <span class="tag">Étudiante BTS CIEL • Mention Bien • Objectif Ingénieur</span>
+            <h1>Hello, je suis <span class="text-pink">Aya</span></h1>
+
+            <h2 class="typing-container">Je maîtrise <span id="typewriter"></span><span class="cursor">|</span></h2>
+
+            <p>Passionnée par la convergence entre le <strong>Hardware</strong> (Électronique/IoT) et le <strong>Software</strong> (Réseaux/Dev). Je conçois des systèmes sécurisés, de la couche physique jusqu'au Cloud.</p>
+
+            <div class="social-links">
+                <a href="https://github.com/Ayaabmk" target="_blank" title="Mon GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:ayabmk13@gmail.com" title="M'envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" title="Mon LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-filled">Me Recruter</a>
+                <a href="#projects" class="btn btn-outline">Voir mes projets</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="tech-circle">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Ma Stack <span class="text-pink">Technique</span></h2>
+
+        <div class="tech-grid">
+            <div class="tech-card"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+            <div class="tech-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+            <div class="tech-card"><i class="fa-solid fa-network-wired"></i><span>Cisco/CCNA</span></div>
+
+            <div class="tech-card highlight-card"><i class="fa-solid fa-microchip"></i><span>Arduino/C++</span></div>
+            <div class="tech-card highlight-card"><i class="fa-solid fa-wifi"></i><span>ESP32 & IoT</span></div>
+
+            <div class="tech-card"><i class="fa-brands fa-php"></i><span>PHP & SQL</span></div>
+            <div class="tech-card"><i class="fa-brands fa-html5"></i><span>HTML5/CSS3</span></div>
+            <div class="tech-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section dark-bg">
+    <div class="container">
+        <h2 class="section-title">Mes <span class="text-pink">Réalisations</span></h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="card-image">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Sécurisation Datahouse</h3>
+                    <span class="status">Projet Phare - IoT & Physique</span>
+                    <p>Système de sécurité complet pour salle serveur sensible.</p>
+                    <ul class="specs">
+                        <li><i class="fa-solid fa-microchip"></i> <strong>Hardware :</strong> ESP32, Capteurs, RFID.</li>
+                        <li><i class="fa-solid fa-bolt"></i> <strong>Élec :</strong> Câblage et programmation C++.</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> <strong>Réseau :</strong> Segmentation & Firewall.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>ESP32</span><span>Arduino</span><span>C++</span><span>IoT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-image">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Mini CMS "From Scratch"</h3>
+                    <span class="status">Dev Backend & Docker</span>
+                    <p>Développement d'un CMS complet sans framework. Architecture moderne.</p>
+                    <ul class="specs">
+                        <li><i class="fa-solid fa-check"></i> Architecture MVC & Stockage Minio.</li>
+                        <li><i class="fa-solid fa-check"></i> Déploiement via Docker Compose.</li>
+                        <li><i class="fa-solid fa-check"></i> Sécurité (Injections SQL, XSS).</li>
+                    </ul>
+                    <div class="tags">
+                        <span>PHP</span><span>Docker</span><span>MySQL</span>
+                    </div>
+                    <a href="https://github.com/Ayaabmk/CMS-PHP-Docker-Minio" target="_blank" class="project-link">
+                        <i class="fa-brands fa-github"></i> Voir le code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-image">
+                    <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Infra Clinique Privée</h3>
+                    <span class="status">Stage & CDI (Juillet 2025)</span>
+                    <p>Gestion du parc informatique critique en milieu médical.</p>
+                    <ul class="specs">
+                        <li><i class="fa-solid fa-check"></i> Support N1/N2 & Maintenance serveurs.</li>
+                        <li><i class="fa-solid fa-check"></i> Déploiement postes & Respect RGPD/Santé.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Active Directory</span><span>GLPI</span><span>Réseau</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Me <span class="text-pink">Contacter</span></h2>
+        <div class="contact-box">
+
+            <form action="https://formspree.io/f/LIEN_FORMSPREE_ICI" method="POST">
+
+                <div class="input-group">
+                    <input type="text" name="name" required>
+                    <label>Votre Nom</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label>Votre Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" rows="5" required></textarea>
+                    <label>Votre message...</label>
+                </div>
+                <button type="submit" class="btn btn-filled">Envoyer</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Portfolio Aya • 2025 • Fait avec <i class="fa-solid fa-heart"></i></p>
+    <div class="footer-links">
+        <a href="https://github.com/Ayaabmk" target="_blank">GitHub</a> |
+        <a href="mailto:ayabmk13@gmail.com">Email</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
